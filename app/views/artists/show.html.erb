@@ -4,3 +4,7 @@
     <li><%= link_to song.title, artist_song_path(@artist, song) %></li>
   <% end %>
 </ul>
+
+<p><%= link_to "Edit Artist", edit_artist_path(@artist) %> -- <%= link_to "Add a new song", new_artist_song_path(@artist) %>
+
+  <%= link_to "All Artists", artists_path%>
